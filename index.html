@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.0/font/bootstrap-icons.min.css">
 </head>
  
-<body>
+<body onload="playAudio()">
  <main id="main">
    <h1 id="title">Deryck Whibley Tribute Page</h1>
    <div id="img-div">
@@ -18,9 +19,6 @@
     <div id="img-caption">A non-chronological history in photos</div>
 </div>
 
-
-
-
 <div id="tribute-info">
   <h2>About Deryck Whibley</h2>
   <p id="summary">Deryck Whibley is a Canadian musician, singer, songwriter, and record producer, best known as the frontman of the punk rock band Sum 41. Known for his energetic performances and heartfelt lyrics, Whibley has left a lasting impact on the punk rock scene. From chart-topping albums like <em>All Killer No Filler</em> to his solo projects, his work resonates with fans around the globe. Despite facing personal and health challenges, Deryck continues to inspire with his resilience and dedication to music.</p>
@@ -30,18 +28,16 @@
 <div id="author-link">
   <h3>by <a id="author-link" href="https://github.com/publiclyviewed" target="blank">publiclyviewed</a></h3>
 </div>
+<audio id="audio" src="https://ia903106.us.archive.org/27/items/Sum41Playlist/15-sum_41-always-cocmp3.mp3"></audio>
+<p id="song-title">Always</p>
+<img class="mini-image" alt="Best of Sum 41 (Japan)" src="https://assets.exclaim.ca/image/upload/v1703864907/up-sum.jpg">
+<button class="play-btn bi bi-play" onclick="playAudio()">Play</button>
+<button class="play-btn bi bi-pause" onclick="pauseAudio()">Pause</button>
 
- </main>
- <div id="google_translate_element"></div>
-
-<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-}
-</script>
-
+</main>
+<div id="google_translate_element"></div>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
 <p id="translate">You can translate the content of this page by selecting a language in the select box.</p>
+<script src="index.js"></script>
 </body>
 </html>

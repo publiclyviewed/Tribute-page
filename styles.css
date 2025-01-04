@@ -4,8 +4,8 @@
 
 #title {
     text-align: center;
-    color: rgb(160, 158, 158); 
-    background-color: rgb(108, 0, 0); 
+    color: rgb(167, 165, 165); 
+    background-color: rgb(109, 0, 0); 
     border: 2px solid black; 
     padding: 10px;
     font-family: 'Arial', sans-serif; 
@@ -62,14 +62,29 @@
     font-size: 8px;
 }
 
-#title:hover, #img-caption:hover {
+#title:hover, #img-caption:hover, #song-title:hover {
     background-color: rgb(101, 100, 100);
     color: rgb(88, 0, 0);
     cursor: pointer;
 }
 
+.mini-image {
+    width: 100px;  
+    height: auto; 
+    margin: 5px; 
+}
 
-
+.play-btn { 
+    background-color: #d63e3e; 
+    border: none; 
+    cursor: pointer; 
+    padding: 10px; 
+    margin: 5px;
+}
+#song-title {
+    font-size: 14px;
+    color: #fdfcfc;
+}
 
 body {
     background-color: rgb(80, 78, 78);
